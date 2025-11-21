@@ -76,7 +76,7 @@ Apresentamos os principais membros da equipe:
 O link abaixo direciona para o vídeo hospedado no YouTube, que registra a apresentação do seminário sobre o problema da coloração de grafos. Nele, são abordados os principais aspectos do tema, juntamente com um exemplo prático da execução do
 algoritmo desenvolvido neste repositório.
 
-[![Youtube Video](https://gitlab.com/reinanhs/repo-slide-presentation/-/wikis/uploads/b199b81b500596ac3a93a542b6a17775/image.png)](https://youtu.be/Dx7mtMMPKDA)
+[![Youtube Video](https://gitlab.com/reinanhs/repo-slide-presentation/-/wikis/uploads/8f7f989453c0399ee12f872147bf9032/image.png)](https://youtu.be/Dx7mtMMPKDA)
 
 - 📹 **Assista:** [https://youtu.be/Dx7mtMMPKDA](https://youtu.be/Dx7mtMMPKDA)
 
