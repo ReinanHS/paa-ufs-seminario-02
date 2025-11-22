@@ -1,14 +1,10 @@
-import networkx as nx
-import matplotlib.pyplot as plt
-
-
 def welsh_powell(grafo):
-
     vertices_ordenados = sorted(grafo.keys(), key=lambda v: len(grafo[v]), reverse=True)
 
     cores_atribuidas = {}
 
     for vertice in vertices_ordenados:
+
         cores_vizinhas = set()
         for vizinho in grafo[vertice]:
             if vizinho in cores_atribuidas:
@@ -23,33 +19,7 @@ def welsh_powell(grafo):
     return cores_atribuidas
 
 
-def visualizar_grafo(grafo_dict, cores_dict):
-    G = nx.Graph(grafo_dict)
-
-    lista_cores = [cores_dict[node] for node in G.nodes()]
-
-    pos = nx.spring_layout(G, seed=42)
-
-    plt.figure(figsize=(8, 6))
-
-    nx.draw(
-        G,
-        pos,
-        with_labels=True,
-        node_color=lista_cores,
-        cmap=plt.cm.Set3,
-        node_size=2000,
-        font_size=12,
-        font_weight="bold",
-        edge_color="gray",
-    )
-
-    plt.title("Coloração de Grafos - Welsh & Powell")
-    plt.show()
-
-
 if __name__ == "__main__":
-
     meu_grafo = {
         "A": ["B", "C", "D"],
         "B": ["A", "C"],
@@ -61,11 +31,9 @@ if __name__ == "__main__":
     resultado = welsh_powell(meu_grafo)
 
     ordem = sorted(meu_grafo.keys(), key=lambda x: len(meu_grafo[x]), reverse=True)
-    print(f"Ordem de processamento: {ordem}")
+    print(f"Ordem de processamento (Grau Decrescente): {ordem}")
     print("-" * 30)
-    print("Resultado da Coloração (Texto):")
+
+    print("Resultado da Coloração:")
     for v in sorted(resultado.keys()):
         print(f"Vértice {v}: Cor {resultado[v]}")
-
-    print("\nGerando imagem...")
-    visualizar_grafo(meu_grafo, resultado)
