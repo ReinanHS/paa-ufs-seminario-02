@@ -38,6 +38,9 @@ Veja abaixo as principais implementações que estão contidas neste projeto:
 - Implementação **em Python** (código principal a ser executado pelo professor);
 - Scripts, dados e testes automatizados.
 
+O código desse repositório implementa o algoritmo de coloração gulosa conhecido como Welsh–Powell.
+O objetivo é colorir os vértices de um grafo usando o menor número possível de cores, garantindo que dois vértices adjacentes não tenham a mesma cor.
+
 ---
 
 ## Colaboradores
@@ -173,6 +176,36 @@ pip install -r requirements.txt  # ou: pip install numpy pandas matplotlib pytes
 python src/main.py
 ```
 
+Saída esperada (exemplo compacto no console):
+
+```shell
+Ordem de processamento: ['C', 'A', 'B', 'D', 'E', 'F']
+------------------------------
+Resultado da Coloração (Texto):
+Vértice A: Cor 1
+Vértice B: Cor 2
+Vértice C: Cor 0
+Vértice D: Cor 2
+Vértice E: Cor 1
+Vértice F: Cor 1
+
+Gerando imagem...
+```
+
+O script também gera essa imagem:
+
+<img width="450" height="350" alt="Figure_1" src="https://gitlab.com/reinanhs/repo-slide-presentation/-/wikis/uploads/08a72cfca07fd4a5b0bf1de27c0f4dcb/Figure_1.png" />
+
+Veja abaixo um exemplo de como fica a tabela de cores para o cenário apresentado na imagem:
+
+| Vértice | Arestas | Cor |
+| ------- | ------- | --- |
+| C       | 4       | 0   |
+| A       | 3       | 1   |
+| B       | 2       | 2   |
+| D       | 2       | 2   |
+| E       | 1       | 1   |
+
 ---
 
 ## Testes
@@ -189,7 +222,6 @@ pytest -q
 
 - [Slides (Google Slides)](https://docs.google.com/presentation/d/1lEKh039yEsfwVY3I6NTUHdcz6Pq1OG5x8jv9GAldyE0/edit?usp=sharing)
 - [Slide em PDF](./data/slide.pdf)
-- [CI (Actions)](https://github.com/ReinanHS/paa-ufs-seminario-02/actions)
 - [Vídeo no Youtube](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ---
