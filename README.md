@@ -79,9 +79,9 @@ Apresentamos os principais membros da equipe:
 O link abaixo direciona para o vídeo hospedado no YouTube, que registra a apresentação do seminário sobre o problema da coloração de grafos. Nele, são abordados os principais aspectos do tema, juntamente com um exemplo prático da execução do
 algoritmo desenvolvido neste repositório.
 
-[![Youtube Video](https://gitlab.com/reinanhs/repo-slide-presentation/-/wikis/uploads/8f7f989453c0399ee12f872147bf9032/image.png)](https://youtu.be/Dx7mtMMPKDA)
+[![Youtube Video](https://gitlab.com/reinanhs/repo-slide-presentation/-/wikis/uploads/8f7f989453c0399ee12f872147bf9032/image.png)](https://youtu.be/dtij-Yeyyz4)
 
-- 📹 **Assista:** [https://youtu.be/Dx7mtMMPKDA](https://youtu.be/Dx7mtMMPKDA)
+- 📹 **Assista:** [https://youtu.be/dtij-Yeyyz4](https://youtu.be/dtij-Yeyyz4)
 
 > Exigência do professor: O README deve conter o link do vídeo no YouTube.
 
@@ -222,7 +222,7 @@ pytest -q
 
 - [Slides (Google Slides)](https://docs.google.com/presentation/d/1lEKh039yEsfwVY3I6NTUHdcz6Pq1OG5x8jv9GAldyE0/edit?usp=sharing)
 - [Slide em PDF](./data/slide.pdf)
-- [Vídeo no Youtube](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- [Vídeo no Youtube](https://youtu.be/dtij-Yeyyz4)
 
 ---
 
